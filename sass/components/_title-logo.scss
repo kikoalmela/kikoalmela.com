@@ -1,0 +1,20 @@
+//////////////////////////////////////
+// TITLE & LOGO
+.title {
+  display: none;
+}
+
+.logo {
+  height: 32vh;
+  position: absolute;
+  top: 16vh;
+  left: 14vw;
+  z-index: 1;
+  animation: fadeIn 2.5s ease-in;
+
+  @media screen and (orientation: portrait) {
+    height: 28vh;
+    top: 18vh;
+    left: 18vw;
+  }
+}
