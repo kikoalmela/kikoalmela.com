@@ -104,11 +104,16 @@ body {
       padding: 5rem 3rem; } }
 
 .about .me {
+  margin-bottom: 3rem;
   display: flex;
   justify-content: space-between; }
   @media only screen and (max-width: 56.25em) {
     .about .me {
       flex-direction: column; } }
+
+.about .story {
+  max-width: 80rem;
+  margin: 0 auto 7rem; }
 
 .portfolio .heading-2 {
   color: #B8A254; }
@@ -294,6 +299,20 @@ body {
     font-size: 1.8rem;
     font-style: italic;
     margin-top: 3.5rem; }
+
+.story__img {
+  float: right;
+  height: 76vh; }
+
+.story__p {
+  margin-bottom: 1.6rem; }
+
+.story__list {
+  list-style-position: inside;
+  margin-bottom: 1.6rem; }
+
+.story__list-item {
+  margin-bottom: 1rem; }
 
 .toolset {
   padding-top: 4rem; }

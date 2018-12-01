@@ -14,11 +14,17 @@
   //////////////////////////////////////
   // ME
   .me {
+    margin-bottom: 3rem;
     display: flex;
     justify-content: space-between;
 
     @include respond(tab-port) {
       flex-direction: column;
     }
+  }
+
+  .story {
+    max-width: 80rem;
+    margin: 0 auto 7rem;
   }
 }
