@@ -33,6 +33,6 @@
 :target::before {
   content: '';
   display: block;
-  height: 6.5rem; /* fixed navbar height*/
-  margin: -6.5rem 0 0; /* negative fixed navbar height */
+  height: $nav-height; /* fixed navbar height*/
+  margin: -$nav-height 0 0; /* negative fixed navbar height */
 }

@@ -2,7 +2,7 @@
 // NAVBAR
 .navbar {
   position: fixed;
-  min-height: 6.5rem;
+  min-height: $nav-height;
   width: 100%;
   z-index: 10;
   padding: 0 5rem;
@@ -23,7 +23,7 @@
     transition: 0.2s ease;
 
     img {
-      height: 5rem;
+      height: 4rem;
     }
 
     &:hover {
@@ -89,7 +89,7 @@
   &__list {
     list-style: none;
     font-family: poppins;
-    font-size: 2.5rem;
+    font-size: 2.3rem;
     font-weight: 200;
 
     display: flex;
