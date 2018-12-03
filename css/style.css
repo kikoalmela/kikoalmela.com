@@ -19,9 +19,6 @@ html {
   @media only screen and (max-width: 75em) {
     html {
       font-size: 56.25%; } }
-  @media only screen and (max-width: 56.25em) {
-    html {
-      font-size: 50%; } }
   @media only screen and (min-width: 112.5em) {
     html {
       font-size: 75%; } }
@@ -102,18 +99,6 @@ body {
   @media only screen and (max-width: 75em) {
     .about__container {
       padding: 5rem 3rem; } }
-
-.about .me {
-  margin-bottom: 3rem;
-  display: flex;
-  justify-content: space-between; }
-  @media only screen and (max-width: 56.25em) {
-    .about .me {
-      flex-direction: column; } }
-
-.about .story {
-  max-width: 80rem;
-  margin: 0 auto 7rem; }
 
 .portfolio .heading-2 {
   color: #B8A254; }
@@ -300,20 +285,61 @@ body {
     font-style: italic;
     margin-top: 3.5rem; }
 
-.story__img {
-  float: right;
-  height: 76vh; }
+.story {
+  max-width: 90rem;
+  margin: 0 auto 7rem; }
+  .story__container {
+    display: flex;
+    align-items: flex-start; }
+  .story__text-box {
+    height: 76vh;
+    overflow-y: scroll;
+    font-size: 1.8rem;
+    -ms-overflow-style: none;
+    overflow: -moz-scrollbars-none; }
+    .story__text-box::-webkit-scrollbar {
+      display: none; }
+    @media only screen and (max-width: 37.5em) {
+      .story__text-box {
+        height: auto; } }
+    .story__text-box .story__img {
+      display: none; }
+      @media only screen and (max-width: 37.5em) {
+        .story__text-box .story__img {
+          display: inline-block;
+          float: right;
+          height: 60vh; } }
+  .story__title {
+    font-family: poppins;
+    font-size: 2rem;
+    color: #292a5b; }
+    .story__title:not(:first-of-type) {
+      margin-top: 1.8rem; }
+  .story__p {
+    margin-bottom: 1.6rem; }
+  .story__link {
+    color: #a28d44;
+    text-decoration: none; }
+    .story__link:hover {
+      text-decoration: underline; }
+  .story__list {
+    list-style: inside;
+    margin-bottom: 1.6rem; }
+  .story__list-item {
+    margin-bottom: 1rem; }
+  .story__img {
+    height: 76vh; }
+    @media only screen and (max-width: 37.5em) {
+      .story__img {
+        display: none; } }
 
-.story__p {
-  margin-bottom: 1.6rem;
-  font-size: 1.8rem; }
-
-.story__list {
-  list-style-position: inside;
-  margin-bottom: 1.6rem; }
-
-.story__list-item {
-  margin-bottom: 1rem; }
+.me {
+  margin-bottom: 3rem;
+  display: flex;
+  justify-content: space-between; }
+  @media only screen and (max-width: 56.25em) {
+    .me {
+      flex-direction: column; } }
 
 .toolset {
   padding-top: 4rem; }

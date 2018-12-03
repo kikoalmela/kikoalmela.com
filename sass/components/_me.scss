@@ -1,0 +1,11 @@
+//////////////////////////////////////
+  // ME
+  .me {
+    margin-bottom: 3rem;
+    display: flex;
+    justify-content: space-between;
+
+    @include respond(tab-port) {
+      flex-direction: column;
+    }
+  }

@@ -1,25 +1,80 @@
+////////////////////////////////////////
+// story
 .story {
+  max-width: 90rem;
+  margin: 0 auto 7rem;
 
-  &__img {
-    float: right;
+  &__container {
+    display: flex;
+    align-items: flex-start;
+  }
+
+  &__text-box {
     height: 76vh;
+    overflow-y: scroll;
+    font-size: 1.8rem;
+
+    -ms-overflow-style: none; // IE 10+
+    overflow: -moz-scrollbars-none; // Firefox
+    &::-webkit-scrollbar {
+      display: none; // Safari and Chrome
+    }
+
+    @include respond(phone) {
+      height: auto;
+    }
+
+    .story__img {
+      display: none;
+
+      @include respond(phone) {
+        display: inline-block;
+        float: right;
+        height: 60vh;
+      }
+    }
+  }
+
+  &__title {
+    font-family: poppins;
+    font-size: 2rem;
+    color: $color-primary-dark;
+
+    &:not(:first-of-type) {
+      margin-top: 1.8rem;
+    }
   }
 
   &__p {
     margin-bottom: 1.6rem;
-    font-size: 1.8rem;
   }
 
   &__link {
+    color: $color-secondary-dark;
+    text-decoration: none;
 
+    &:hover {
+      text-decoration: underline;
+    }
   }
 
   &__list {
-    list-style-position: inside;
+    list-style: inside;
     margin-bottom: 1.6rem;
   }
 
   &__list-item {
     margin-bottom: 1rem;
+  }
+
+  &__story_img-box {
+  }
+
+  &__img {
+    height: 76vh;
+
+    @include respond(phone) {
+      display: none;
+    }
   }
 }
