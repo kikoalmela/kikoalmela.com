@@ -7,7 +7,7 @@
 
   &__container {
     background-color: $color-dark;
-    padding: 3.5rem 10rem 10rem;
+    padding: 7rem 10rem 10rem;
 
     @include respond(tab-port) {
       padding: 3rem 6rem 5rem;

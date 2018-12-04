@@ -52,14 +52,14 @@ body {
   text-transform: capitalize;
   font-style: italic;
   letter-spacing: .4rem;
-  margin-bottom: 5rem; }
+  margin-bottom: 6rem; }
 
 .heading-3 {
   font-size: 2.5rem;
   letter-spacing: .3rem;
   color: #383c7e;
   text-transform: uppercase;
-  margin-bottom: 2rem; }
+  margin-bottom: 4rem; }
 
 .header {
   height: 100vh;
@@ -93,7 +93,7 @@ body {
   /* negative fixed navbar height */ }
 
 .about__container {
-  padding: 3.5rem 0 10rem;
+  padding: 7rem 0;
   max-width: 120rem;
   margin: 0 auto; }
   @media only screen and (max-width: 75em) {
@@ -105,7 +105,7 @@ body {
 
 .portfolio__container {
   background-color: #171833;
-  padding: 3.5rem 10rem 10rem; }
+  padding: 7rem 10rem 10rem; }
   @media only screen and (max-width: 56.25em) {
     .portfolio__container {
       padding: 3rem 6rem 5rem; } }
@@ -114,7 +114,7 @@ body {
       padding: 3rem 3rem 5rem; } }
 
 .contact__container {
-  padding: 3.5rem 2rem 7rem; }
+  padding: 5rem 2rem 7rem; }
 
 .footer {
   background-color: #171833;
@@ -292,7 +292,7 @@ body {
     display: flex;
     align-items: flex-start; }
   .story__text-box {
-    height: 76vh;
+    height: 70vh;
     overflow-y: scroll;
     font-size: 1.8rem;
     -ms-overflow-style: none;
@@ -308,7 +308,7 @@ body {
         .story__text-box .story__img {
           display: inline-block;
           float: right;
-          height: 60vh; } }
+          height: 55vh; } }
   .story__title {
     font-family: poppins;
     font-size: 2rem;
@@ -328,7 +328,7 @@ body {
   .story__list-item {
     margin-bottom: 1rem; }
   .story__img {
-    height: 76vh; }
+    height: 70vh; }
     @media only screen and (max-width: 37.5em) {
       .story__img {
         display: none; } }
@@ -342,7 +342,7 @@ body {
       flex-direction: column; } }
 
 .toolset {
-  padding-top: 4rem; }
+  padding: 4rem 0; }
   .toolset__row {
     display: flex;
     justify-content: space-between;
@@ -427,14 +427,14 @@ body {
 .form {
   max-width: 70rem;
   margin: 0 auto;
-  padding: 5rem 0 3rem;
+  padding: 3rem 0 2rem;
   border-radius: 5px;
   background-color: #dbdcef; }
   .form__group:not(:last-child) {
     margin-bottom: 2rem; }
   .form__input, .form__label {
     display: block;
-    width: 75%;
+    width: 85%;
     margin: 0 auto 0.4rem; }
   .form__input {
     font-family: inherit;
@@ -460,7 +460,7 @@ body {
   .form__comments-box {
     resize: none;
     border: none;
-    width: 75%;
+    width: 85%;
     height: 10rem;
     margin: 0 auto;
     display: block;
@@ -475,7 +475,7 @@ body {
       box-shadow: 0 1rem 3rem rgba(23, 24, 51, 0.1); }
   .form__btn {
     display: block;
-    margin: 4rem auto 0; }
+    margin: 3rem auto 0; }
 
 .btn {
   color: #383c7e;

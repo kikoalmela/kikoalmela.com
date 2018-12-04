@@ -10,7 +10,7 @@
   }
 
   &__text-box {
-    height: 76vh;
+    height: 70vh;
     overflow-y: scroll;
     font-size: 1.8rem;
 
@@ -30,7 +30,7 @@
       @include respond(phone) {
         display: inline-block;
         float: right;
-        height: 60vh;
+        height: 55vh;
       }
     }
   }
@@ -71,7 +71,7 @@
   }
 
   &__img {
-    height: 76vh;
+    height: 70vh;
 
     @include respond(phone) {
       display: none;
