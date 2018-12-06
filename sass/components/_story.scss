@@ -1,7 +1,7 @@
 ////////////////////////////////////////
 // story
 .story {
-  max-width: 90rem;
+  max-width: 95rem;
   margin: 0 auto 7rem;
 
   &__container {
@@ -22,6 +22,7 @@
 
     @include respond(phone) {
       height: auto;
+      overflow: visible;
     }
 
     .story__img {
@@ -31,6 +32,8 @@
         display: inline-block;
         float: right;
         height: 55vh;
+        margin-right: -3rem;
+        z-index: 10;
       }
     }
   }
@@ -67,14 +70,35 @@
     margin-bottom: 1rem;
   }
 
-  &__story_img-box {
+  &__img-box {
+    display: flex;
   }
 
   &__img {
     height: 70vh;
+    z-index: 10;
 
     @include respond(phone) {
       display: none;
     }
+  }
+
+  &__tools {
+    height: 70vh;
+    width: 6rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-left: -.7rem;
+    padding: 0 .5rem;
+    background: linear-gradient(to right, rgba($color-primary-light, .7) 0%, $color-secondary-bright 50%, rgba($color-primary-light, .7) 100%);
+
+    @include respond(phone) {
+      display: none;
+    }
+  }
+
+  &__tool-logo {
+    width: 100%;
   }
 }
