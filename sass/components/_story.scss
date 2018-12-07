@@ -85,13 +85,33 @@
 
   &__tools {
     height: 70vh;
-    width: 6rem;
+    // width: 6rem;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     margin-left: -.7rem;
     padding: 0 .5rem;
-    background: linear-gradient(to right, rgba($color-primary-light, .7) 0%, $color-secondary-bright 50%, rgba($color-primary-light, .7) 100%);
+    // background: linear-gradient(to right, rgba($color-primary-light, .7) 0%, $color-secondary-bright 50%, rgba($color-primary-light, .7) 100%);
+    background: linear-gradient(
+                          to right,
+                          rgba($color-primary-light, .3),
+                          rgba($color-secondary-bright, .5),
+                          rgba($color-primary-light, .3)
+                          );
+    position: relative;
+
+    &::after {
+      content: "";
+      background: url("../../img/bricks.jpg");
+      opacity: .9;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      position: absolute;
+      z-index: -1;   
+    }
+    
 
     @include respond(phone) {
       display: none;
@@ -99,6 +119,8 @@
   }
 
   &__tool-logo {
-    width: 100%;
+    // width: 100%;
+    height: 10%;
+    width: auto;
   }
 }
