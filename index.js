@@ -76,4 +76,10 @@ window.onload = function() {
     });
   }
  */
+
+  // Get current year
+  let year = new Date().getFullYear();
+  // Set copyright text
+  const copyright = document.querySelector('.copy');
+  copyright.innerHTML = `&copy; ${year} Kiko Almela`;
 };
