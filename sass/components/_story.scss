@@ -24,17 +24,17 @@
       height: auto;
       overflow: visible;
     }
+  }
 
-    .story__img {
-      display: none;
+  .story__text-img {
+    display: none;
 
-      @include respond(phone) {
-        display: inline-block;
-        float: right;
-        height: 55vh;
-        margin-right: -3rem;
-        z-index: 10;
-      }
+    @include respond(phone) {
+      display: inline-block;
+      float: right;
+      height: 55vh;
+      margin-right: -3.3rem;
+      z-index: 10;
     }
   }
 

@@ -95,7 +95,8 @@ body {
 .about__container {
   padding: 7rem 0;
   max-width: 120rem;
-  margin: 0 auto; }
+  margin: 0 auto;
+  overflow: hidden; }
   @media only screen and (max-width: 75em) {
     .about__container {
       padding: 5rem 3rem; } }
@@ -303,15 +304,15 @@ body {
       .story__text-box {
         height: auto;
         overflow: visible; } }
-    .story__text-box .story__img {
-      display: none; }
-      @media only screen and (max-width: 37.5em) {
-        .story__text-box .story__img {
-          display: inline-block;
-          float: right;
-          height: 55vh;
-          margin-right: -3rem;
-          z-index: 10; } }
+  .story .story__text-img {
+    display: none; }
+    @media only screen and (max-width: 37.5em) {
+      .story .story__text-img {
+        display: inline-block;
+        float: right;
+        height: 55vh;
+        margin-right: -3.3rem;
+        z-index: 10; } }
   .story__title {
     font-family: poppins;
     font-size: 2rem;

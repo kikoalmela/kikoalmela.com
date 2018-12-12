@@ -5,6 +5,7 @@
     padding: 7rem 0;
     max-width: 120rem;
     margin: 0 auto;
+    overflow: hidden;
 
     @include respond(tab-land) {
       padding: 5rem 3rem;
