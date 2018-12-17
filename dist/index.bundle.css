@@ -67,7 +67,7 @@ body {
   background-color: #171833; }
   .header::after {
     content: '';
-    background-image: url("../img/hero-img.jpg");
+    background-image: url(b08ad0af747bb47dda3a751871182e91.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: bottom;
@@ -82,7 +82,7 @@ body {
       height: 100vh;
       height: calc(var(--vh, 1vh) * 100); }
       .header::after {
-        background-image: url("../img/hero-img-portrait.jpg"); } }
+        background-image: url(28aa80425b5a4bba990a98791350efda.jpg); } }
 
 :target::before {
   content: '';
@@ -351,7 +351,7 @@ body {
     position: relative; }
     .story__tools::after {
       content: "";
-      background: url("../img/bricks.jpg");
+      background: url(8ff10dc4ff2f0926748d6b3034436424.jpg);
       opacity: .9;
       top: 0;
       left: 0;
@@ -565,3 +565,4 @@ body {
       margin-top: 2rem;
       text-align: center;
       align-self: auto; } }
+

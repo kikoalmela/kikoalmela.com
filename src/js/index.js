@@ -1,4 +1,7 @@
 'use strict';
+
+import '../sass/main.scss';
+
 window.onload = function() {
   // On portrait view, Collapse deployed menu when menu item is clicked
   const checkbox = document.getElementById('navi-toggle');
