@@ -3,10 +3,16 @@
   "version": "1.0.0",
   "description": "Kiko Almela personal webpage",
   "main": "index.js",
-  "scripts": {
-    
-  },
+  "scripts": {},
   "author": "kikoalmela",
   "license": "ISC",
-  "devDependencies": {}
+  "devDependencies": {
+    "@babel/core": "^7.2.2",
+    "@babel/preset-env": "^7.2.0",
+    "cssnano": "^4.1.7",
+    "sass": "^1.15.2"
+  },
+  "dependencies": {
+    "@babel/polyfill": "^7.0.0"
+  }
 }

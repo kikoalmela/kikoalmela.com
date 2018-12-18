@@ -42,14 +42,16 @@
     font-family: poppins;
     font-size: 2rem;
     color: $color-primary-dark;
+    margin-bottom: 2rem;
 
     &:not(:first-of-type) {
-      margin-top: 1.8rem;
+      margin-top: 6rem;
     }
   }
 
   &__p {
-    margin-bottom: 1.6rem;
+    margin-bottom: 2rem;
+    line-height: 1.8;
   }
 
   &__link {
@@ -102,7 +104,7 @@
 
     &::after {
       content: "";
-      background: url("../../img/bricks.jpg");
+      background: url("../img/bricks.jpg");
       opacity: .9;
       top: 0;
       left: 0;

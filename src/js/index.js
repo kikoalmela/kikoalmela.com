@@ -1,4 +1,5 @@
 'use strict';
+
 window.onload = function() {
   // On portrait view, Collapse deployed menu when menu item is clicked
   const checkbox = document.getElementById('navi-toggle');
