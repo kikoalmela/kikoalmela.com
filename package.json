@@ -3,10 +3,10 @@
   "version": "1.0.0",
   "description": "Kiko Almela personal webpage",
   "main": "index.js",
-  "scripts": {
-    
-  },
+  "scripts": {},
   "author": "kikoalmela",
   "license": "ISC",
-  "devDependencies": {}
+  "devDependencies": {
+    "gulp": "^4.0.0"
+  }
 }
