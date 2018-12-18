@@ -44,12 +44,13 @@
     color: $color-primary-dark;
 
     &:not(:first-of-type) {
-      margin-top: 1.8rem;
+      margin-top: 5rem;
     }
   }
 
   &__p {
-    margin-bottom: 1.6rem;
+    line-height: 1.8;
+    margin-bottom: 2rem;
   }
 
   &__link {

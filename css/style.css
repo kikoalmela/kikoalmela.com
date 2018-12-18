@@ -318,9 +318,10 @@ body {
     font-size: 2rem;
     color: #292a5b; }
     .story__title:not(:first-of-type) {
-      margin-top: 1.8rem; }
+      margin-top: 5rem; }
   .story__p {
-    margin-bottom: 1.6rem; }
+    line-height: 1.8;
+    margin-bottom: 2rem; }
   .story__link {
     color: #a28d44;
     text-decoration: none; }
