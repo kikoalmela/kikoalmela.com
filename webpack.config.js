@@ -66,6 +66,12 @@ module.exports = {
       template: './src/index.html',
       filename: 'index.html'
     }),
+    new HtmlWebpackPlugin({
+      // inject: false,
+      // hash: true,
+      template: './src/gdpr/privacy-policy.html',
+      filename: './gdpr/privacy-policy.html'
+    }),
     new MiniCssExtractPlugin({
       filename: '[name].bundle.css',
       chunkFilename: '[id].css'

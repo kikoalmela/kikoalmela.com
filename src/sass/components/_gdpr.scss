@@ -1,0 +1,27 @@
+.gdpr {
+  width: 80%;
+  max-width: 90rem;
+  margin: 5rem auto;
+
+  &__title {
+
+    &--primary {
+      margin-bottom: 2rem;
+    }
+
+    &--secondary {
+      margin-top: 1.6rem;
+    }
+  }
+
+  &__paragraph {
+    text-align: justify;
+    margin-bottom: 1.6rem;
+  }
+  
+  &__list {
+    text-align: justify;
+    margin-bottom: 1.6rem;
+    list-style-position: inside;
+  }
+}
