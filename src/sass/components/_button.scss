@@ -13,6 +13,7 @@
   );
   box-shadow: 0 0.5rem 1rem rgba($color-dark, 0.3);
   transition: all 0.2s;
+  cursor: pointer;
 
   &:hover,
   &:focus {
