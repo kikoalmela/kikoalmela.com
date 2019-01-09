@@ -3,7 +3,11 @@
 .social-row {
   display: flex;
   justify-content: center;
-  grid-column: 2 / 3;
+  
+  @include respond(tab-port) {
+    order: -2;
+    margin-bottom: 2rem;
+  }
 }
 
 //////////////////////////////////////////////////
@@ -16,10 +20,24 @@
     margin-right: 5rem;
   }
 
+  &__link {
+    transition: all .3s;
+
+    &:link,
+    &:visited {
+      color: $color-secondary;
+      text-decoration: none;
+    }
+
+    &:hover,
+    &:active {
+      color: $color-secondary-light;
+    }
+  }
+
   &__icon {
     font-size: 3.5rem;
     width: 3.5rem;
-    color: $color-secondary;
   }
 
 }
