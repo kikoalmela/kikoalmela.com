@@ -67,10 +67,16 @@ module.exports = {
       filename: 'index.html'
     }),
     new HtmlWebpackPlugin({
-      // inject: false,
-      // hash: true,
+      template: './src/rgpd/aviso-legal.html',
+      filename: './rgpd/aviso-legal.html'
+    }),
+    new HtmlWebpackPlugin({
       template: './src/rgpd/politica-de-privacidad.html',
       filename: './rgpd/politica-de-privacidad.html'
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/rgpd/politica-de-cookies.html',
+      filename: './rgpd/politica-de-cookies.html'
     }),
     new MiniCssExtractPlugin({
       filename: '[name].bundle.css',

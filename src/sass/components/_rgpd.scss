@@ -28,4 +28,11 @@
   &__list-item {
     line-height: 2.5rem;
   }
+
+  &__link {
+    &:link,
+    &:visited {
+      color: $color-primary-dark;
+    }
+  }
 }
