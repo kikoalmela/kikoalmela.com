@@ -69,8 +69,8 @@ module.exports = {
     new HtmlWebpackPlugin({
       // inject: false,
       // hash: true,
-      template: './src/gdpr/privacy-policy.html',
-      filename: './gdpr/privacy-policy.html'
+      template: './src/rgpd/politica-de-privacidad.html',
+      filename: './rgpd/politica-de-privacidad.html'
     }),
     new MiniCssExtractPlugin({
       filename: '[name].bundle.css',
