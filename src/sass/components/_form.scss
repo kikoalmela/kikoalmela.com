@@ -6,8 +6,16 @@
   padding: 3rem 0 2rem;
   border-radius: 5px;
   background-color: lighten($color-primary-light, 20);
+  color: $color-primary-dark;
+
+  &__description {
+    font-size: 1.8rem;
+  }
 
   &__group {
+    width: 85%;
+    margin: 0 auto;
+
     &:not(:last-child) {
       margin-bottom: 2rem;
     }
@@ -15,16 +23,15 @@
 
   &__input,
   &__label {
+    width: 100%;
     display: block;
-    width: 85%;
-    margin: 0 auto 0.4rem;
   }
 
   &__input {
     font-family: inherit;
     font-size: 1.8rem;
     color: rgba($color-text, 0.8);
-    padding: 1rem;
+    padding: .8rem;
     border: none;
 
     &:focus {
@@ -56,7 +63,7 @@
   &__comments-box {
     resize: none;
     border: none;
-    width: 85%;
+    width: 100%;
     height: 10rem;
     margin: 0 auto;
     display: block;
@@ -73,6 +80,33 @@
       outline: none;
       box-shadow: 0 1rem 3rem rgba($color-dark, 0.1);
     }
+  }
+
+  &__privacy {
+    padding-top: 1rem;
+  }
+
+  &__privacy-title {
+    margin-bottom: .6rem;
+  }
+
+  &__acceptance {
+    font-size: 1.4rem;
+    margin-bottom: .6rem;
+  }
+
+  &__privacy-abstract {
+    list-style: square inside;
+    font-size: 1.3rem;
+  }
+
+  &__privacy-line {
+    font-style: italic;
+  }
+
+  &__privacy-concept {
+    font-style: normal;
+    font-weight: 500;
   }
 
   &__btn {

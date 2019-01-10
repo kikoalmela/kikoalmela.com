@@ -10,7 +10,7 @@
     />
 
     <link
-      href="https://fonts.googleapis.com/css?family=Niramit:300,300i|Poppins:200,200i,300,300i"
+      href="https://fonts.googleapis.com/css?family=Niramit:300,300i,500|Poppins:200,200i,300,300i"
       rel="stylesheet"
     />
     <link
@@ -581,9 +581,11 @@
             class="form"
             id="form"
           >
-            <p class="form__text">
-              Escríbeme y me pondré en contacto contigo:
-            </p>
+            <div class="form__group">
+              <p class="form__description">
+                Si quieres ponerte en contacto conmigo:
+              </p>
+            </div>
             <div class="form__group">
               <input
                 type="text"
@@ -622,22 +624,24 @@
             </div>
 
             <div class="form__group">
-              <div class="form__legal">
-                <h4 class="form__legal-title">Cuestiones legales</h4>
-                <input
-                  type="checkbox"
-                  name="consent"
-                  id="consent"
-                  class="form__consent"
-                />
-                <label for="consent">
-                  Confirmas que has leído y aceptas la
-                  <a href="rgpd/politica-de-privacidad.html"
-                    >política de privacidad</a
-                  >
-                  y que puedo enviarte correos.
-                </label>
-                <ul class="form__privacy">
+              <div class="form__privacy">
+                <h4 class="form__privacy-title">Cuestiones legales</h4>
+                <div class="form__acceptance">
+                  <input
+                    type="checkbox"
+                    name="acceptance"
+                    id="acceptance"
+                    class="form__acceptance-input"
+                  />
+                  <label for="acceptance">
+                    Confirmas que has leído y aceptas la
+                    <a href="rgpd/politica-de-privacidad.html"
+                      >política de privacidad</a
+                    >
+                    y que puedo enviarte correos.
+                  </label>
+                </div>
+                <ul class="form__privacy-abstract">
                   <li class="form__privacy-line">
                     <span class="form__privacy-concept"
                       >Responsable y Destinatario:
