@@ -119,6 +119,8 @@
   }
 
   &__link {
+    font-style: normal;
+
     &:link,
     &:visited {
       color: $color-secondary-dark;
