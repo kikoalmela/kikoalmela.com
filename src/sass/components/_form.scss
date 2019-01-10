@@ -6,11 +6,7 @@
   padding: 3rem 0 2rem;
   border-radius: 5px;
   background-color: lighten($color-primary-light, 20);
-  color: $color-primary-dark;
-
-  &__description {
-    font-size: 1.8rem;
-  }
+  color: rgba($color-primary-dark, 0.8);
 
   &__group {
     width: 85%;
@@ -120,6 +116,20 @@
   &__acceptance {
     font-size: 1.4rem;
     margin-bottom: .6rem;
+  }
+
+  &__link {
+    &:link,
+    &:visited {
+      color: $color-secondary-dark;
+      text-decoration: none;
+    }
+    
+    &:hover,
+    &:active {
+      color: $color-secondary;
+      text-decoration: underline;
+    }
   }
 
   &__privacy-abstract {
