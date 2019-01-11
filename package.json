@@ -34,7 +34,5 @@
   "browserslist": [
     "last 2 versions"
   ],
-  "dependencies": {
-    "cookieconsent": "^3.1.0"
-  }
+  "dependencies": {}
 }
