@@ -48,6 +48,11 @@ module.exports = {
           'postcss-loader',
           'sass-loader'
         ]
+      },
+      {
+        test: /\.css$/,
+        exclude: /node_modules/,
+        use: [MiniCssExtractPlugin.loader, 'css-loader']
       }
       // {
       //   test: /\.(png|svg|jpg|gif)$/,
