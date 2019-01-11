@@ -7,13 +7,13 @@ import { setVhVariable, setCopyright } from './utils';
 import cookieconsent from './cookieconsent';
 import initCookieconsent from './initCookieconsent';
 
-cookieconsent();
-
 const loadScripts = () => {
   initCookieconsent();
   handleNav();
   setVhVariable();
   setCopyright();
 };
+
+cookieconsent();
 
 window.onload = loadScripts;
