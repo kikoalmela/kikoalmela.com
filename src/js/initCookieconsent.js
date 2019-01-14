@@ -10,7 +10,7 @@ const initCookieconsent = () => {
         text: '#FFE173'
       }
     },
-    // cookie: { domain: '.kikoalmela.com' },
+    cookie: { domain: '.kikoalmela.com' },
     content: {
       header: '¡Este sitio utiliza cookies!',
       message:
