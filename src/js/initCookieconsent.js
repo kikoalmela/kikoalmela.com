@@ -10,7 +10,7 @@ const initCookieconsent = () => {
         text: '#FFE173'
       }
     },
-    cookie: { domain: '.kikoalmela.com' },
+    // cookie: { domain: '.kikoalmela.com' },
     content: {
       header: '¡Este sitio utiliza cookies!',
       message:
@@ -31,12 +31,14 @@ const initCookieconsent = () => {
       const type = this.options.type;
       const didConsent = this.hasConsented();
       if (type == 'opt-in' && didConsent) {
-        // enable Google-Analytics cookies
-        window['ga-disable-GA_TRACKING_ID'] = false;
+        // enable Google-Analytics tracking
+        window['ga-disable-GA_UA-132429912-1'] = false;
       }
       if (type == 'opt-out' && !didConsent) {
-        // disable Google-Analytics cookies
-        window['ga-disable-GA_TRACKING_ID'] = true;
+        // disable Google-Analytics tracking
+        window['ga-disable-GA_UA-132429912-1'] = true;
+      } else {
+        window['ga-disable-GA_UA-132429912-1'] = true;
       }
     },
 
@@ -44,12 +46,12 @@ const initCookieconsent = () => {
       const type = this.options.type;
       const didConsent = this.hasConsented();
       if (type == 'opt-in' && didConsent) {
-        // enable Google-Analytics cookies
-        window['ga-disable-GA_TRACKING_ID'] = false;
+        // enable Google-Analytics tracking
+        window['ga-disable-GA_UA-132429912-1'] = false;
       }
       if (type == 'opt-out' && !didConsent) {
-        // disable Google-Analytics cookies
-        window['ga-disable-GA_TRACKING_ID'] = true;
+        // disable Google-Analytics tracking
+        window['ga-disable-GA_UA-132429912-1'] = true;
       }
     },
 
@@ -57,12 +59,12 @@ const initCookieconsent = () => {
       const didConsent = this.hasConsented();
       const type = this.options.type;
       if (type == 'opt-in') {
-        // disable Google-Analytics cookies
-        window['ga-disable-GA_TRACKING_ID'] = true;
+        // disable Google-Analytics tracking
+        window['ga-disable-GA_UA-132429912-1'] = true;
       }
       if (type == 'opt-out') {
-        // enable Google-Analytics cookies
-        window['ga-disable-GA_TRACKING_ID'] = false;
+        // enable Google-Analytics tracking
+        window['ga-disable-GA_UA-132429912-1'] = false;
       }
     },
     law: {
