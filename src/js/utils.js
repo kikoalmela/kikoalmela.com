@@ -1,5 +1,3 @@
-'use strict';
-
 // sizing the actual viewport height non cropped on mobile browsers
 export const setVhVariable = () => {
   // get the viewport height and multiple it by 1% to get a value for a vh unit

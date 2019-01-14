@@ -1,5 +1,3 @@
-'use strict';
-
 const menuOpen = document.getElementById('navi-toggle'); // Checkbox that handle collapsed menu
 const menuItems = document.querySelectorAll('.navbar__link');
 const navLogo = document.querySelector('.navbar__logo-img');

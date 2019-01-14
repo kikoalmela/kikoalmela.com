@@ -1,5 +1,3 @@
-'use strict';
-
 const initCookieconsent = () => {
   window.cookieconsent.initialise({
     container: document.querySelector('.container'),
@@ -16,7 +14,7 @@ const initCookieconsent = () => {
     content: {
       header: '¡Este sitio utiliza cookies!',
       message:
-        'Este sitio utiliza cookies propias y de terceros para obtener datos estadísticos de la navegación de los usuarios y mejorar esta página web. Si aceptas se considera que permites su uso. Puedes cambiar la configuración u obtener más información',
+        'Este sitio utiliza cookies propias y de terceros para obtener datos estadísticos de la navegación de los usuarios. No se almacenan datos personales ni existen fines comerciales ni publicitarios. Solo se generarán si aceptas su uso. Puedes cambiar tu configuración en cualquier momento y obtener más información',
       dismiss: 'Entendido',
       allow: 'Aceptar',
       deny: 'Rechazar',
@@ -28,42 +26,43 @@ const initCookieconsent = () => {
     },
     type: 'opt-in',
     revokable: true,
+
     onInitialise: function(status) {
-      var type = this.options.type;
-      var didConsent = this.hasConsented();
+      const type = this.options.type;
+      const didConsent = this.hasConsented();
       if (type == 'opt-in' && didConsent) {
-        // enable cookies
-        console.log('init:', didConsent);
+        // enable Google-Analytics cookies
+        window['ga-disable-GA_TRACKING_ID'] = false;
       }
       if (type == 'opt-out' && !didConsent) {
-        // disable cookies
-        console.log('init:', didConsent);
+        // disable Google-Analytics cookies
+        window['ga-disable-GA_TRACKING_ID'] = true;
       }
     },
 
     onStatusChange: function(status, chosenBefore) {
-      var type = this.options.type;
-      var didConsent = this.hasConsented();
+      const type = this.options.type;
+      const didConsent = this.hasConsented();
       if (type == 'opt-in' && didConsent) {
-        // enable cookies
-        console.log('change:', didConsent);
+        // enable Google-Analytics cookies
+        window['ga-disable-GA_TRACKING_ID'] = false;
       }
       if (type == 'opt-out' && !didConsent) {
-        // disable cookies
-        console.log('change', didConsent);
+        // disable Google-Analytics cookies
+        window['ga-disable-GA_TRACKING_ID'] = true;
       }
     },
 
     onRevokeChoice: function() {
-      var didConsent = this.hasConsented();
-      var type = this.options.type;
+      const didConsent = this.hasConsented();
+      const type = this.options.type;
       if (type == 'opt-in') {
-        // disable cookies
-        console.log('revoke', didConsent);
+        // disable Google-Analytics cookies
+        window['ga-disable-GA_TRACKING_ID'] = true;
       }
       if (type == 'opt-out') {
-        // enable cookies
-        console.log('cookies revocadas');
+        // enable Google-Analytics cookies
+        window['ga-disable-GA_TRACKING_ID'] = false;
       }
     },
     law: {
