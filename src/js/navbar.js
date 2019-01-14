@@ -43,10 +43,10 @@ const activeMenuItemOnScroll = () => {
 // Less consuming than activeMenuItemOnScroll
 // but doesn't update active item on scroll
 function activeMenuItemByUrlHash() {
-  let hash = window.location.hash;
+  const hash = window.location.hash;
 
   menuItems.forEach(el => {
-    let elHref = el.getAttribute('href');
+    const elHref = el.getAttribute('href');
     elHref === hash
       ? el.classList.add('active')
       : el.classList.remove('active');

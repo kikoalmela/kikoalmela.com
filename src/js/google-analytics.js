@@ -1,7 +1,7 @@
 const loadScriptAsync = (scriptSrc, callback) => {
-  /* if (typeof callback !== 'function') {
+  if (typeof callback !== 'function') {
     throw new Error('Not a valid callback for async script load');
-  } */
+  }
   var script = document.createElement('script');
   script.onload = callback;
   script.src = scriptSrc;
@@ -9,7 +9,7 @@ const loadScriptAsync = (scriptSrc, callback) => {
 };
 
 loadScriptAsync(
-  'https://www.googletagmanager.com/gtag/js?id=UA-74793602-1',
+  'https://www.googletagmanager.com/gtag/js?id=UA-132429912-1',
   function() {
     window.dataLayer = window.dataLayer || [];
     function gtag() {
