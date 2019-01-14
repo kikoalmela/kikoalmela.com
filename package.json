@@ -9,6 +9,9 @@
   },
   "author": "kikoalmela",
   "license": "ISC",
+  "openSource": {
+		"credits": "https://github.com/insites/cookieconsent/"
+	},
   "devDependencies": {
     "@babel/core": "^7.2.2",
     "@babel/preset-env": "^7.2.0",
