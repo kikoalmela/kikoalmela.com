@@ -15,7 +15,7 @@ const HandleClickItem = () =>
 // Close menu on clicking logo
 const HandleClickLogo = () =>
   navLogo.addEventListener('click', () => {
-    if (checkbox.checked) closeMenu();
+    if (menuOpen.checked) closeMenu();
   });
 
 //  Set active menu item on scroll
