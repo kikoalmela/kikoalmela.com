@@ -8,5 +8,4 @@ const loadScripts = () => {
   setCopyright();
 };
 
-cookieconsent();
 window.onload = loadScripts;
